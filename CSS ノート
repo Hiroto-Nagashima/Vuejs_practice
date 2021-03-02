@@ -1,0 +1,113 @@
+h1{                セレクタ　　　　　対象の要素名
+  color:red;　　　　プロパティ：値　　変更項目
+}
+
+CSSの場合は/* */で囲んだ行がコメントになる
+
+h1,p{
+  color:red;      複数のセレクタをコンマ（,）で区切ることで、それらに同じCSSを適用することができる
+}
+
+header>h1 {
+  /* header要素の直下にあるh1要素に適用される */
+}
+h1#header {
+  /* id名「header」のh1要素に適用される *
+<div class="btn blue"></div>   classの値を空白で区切ると.btnと.blueで別のCSSを適応できる
+
+アイコン
+Font Awesomeは、以下の手順で使用することができます。
+①Font AwesomeのCSSファイルを読み込む
+②<span>タグにfaクラスとfa-アイコン名クラスを指定する
+
+リセットCSS
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+プロパティ
+  {
+      color：16進数/主要な色;
+  }
+  {
+    font-size:10px;
+  }
+  {
+    font-family:値；　　　　　フォントの種類変更　　　フォント名にスペースがある場合は、ダブルクォーテーションで囲む
+  }　　　　　　　　　　　　　　値　　明朝体　serif   ゴシック体　　sans-serif
+ {
+   background-color:値；　　「#dddddd」のように同じ値が続く場合は、「#ddd」と省略できる。
+   width:20px;             横幅    widthは、指定しなければ横幅いっぱいに広がり、子要素は親要素の値が最大値となる。
+   height:20px;　　　　　　　高さ    heightは、指定しなければ子要素の高さの合計がそのまま親要素の高さとなる。
+ }
+
+ <li class="selected">ソフトバンク</li>
+ .selected{
+   color:red                特定のHTMLにCSS適応　先頭に.必要
+   }
+
+   li{
+     float:left/right;               floatプロパティは、指定された要素を左または右に寄せて配置する際に使用
+                                     ブロック要素を横並びにできる
+   }
+
+   {
+     padding:top right bottom left;        余白の設定
+   }
+
+   .header-list li{
+     color:red;              header-list」の中の<li>要素にのみCSSを適用することができる
+   }
+
+    span{
+      color:red;  　　特定の文字にcssを適応 <span>要素や<a>要素のように改行されない要素をインライン要素という
+    　　　　　　　　　　　前後で改行が入り、親要素の幅一杯に広がる要素をブロック要素という
+　　　　　　　　　　　　　インライン要素にはwidthやheight,padding,marginが指定できない
+    }
+
+    li{
+      border-方向：太さ　種類　色        HTMLの全ての要素には、border（初期状態では表示されない）があり、
+    　　　　　　　　　　　　　　　　　　　　その外側の余白はmargin, 内側の余白はpaddingという
+    }
+
+    .logo{
+      margin:上下　左右/ top right bottom right;
+    }
+    <input>           １行のテキスト入力
+    <textarea></textarea>            要素は複数行のテキスト入力
+    <input type="submit" value="保存"> type属性　　タグに対応した様々なタイプを指定　value  初期値を指定
+    {
+      background-image:url();      背景画像指定　　　
+      　　　　　　　　　　　　　　　　background-size: cover;を指定すると、1枚の画像で表示範囲を埋め尽くすように画像の大きさが拡大縮小
+    }
+    {
+      margin:auto     中央揃え　必ずwidthも指定
+      opacity:数値　　　透明度は0.0(完全に透明) ~ 1.0(完全に不透明)の数値で指定
+      letter-spacing:2px;    文字同士の間隔を指定
+
+    }
+    div:hover{
+      background-color:red;  セレクタ:hoverとすることで、カーソルが乗ったときのCSSを指定することができる
+    }
+
+    li{
+      border-radius:10px;       角を10px丸くする
+    }
+    {
+      text-align:center;         テキスト中央揃え　　　テキスト等のインライン要素やインラインブロック要素の配置を指定
+    }　　　　　　　　　　　　　　　　　margin:o auto はブロック要素の中央揃え
+
+    {
+      background-color:rgba(0,0,0,透明度)　特定の箇所のみ透過させる
+    }
+    div{
+      transition:変化の対象 変化の時間　　　　　アニメーションをつけることができる
+      line-height: px       行間の高さ　line-heightプロパティを同じ値にすると、文字がちょうど中央に配置される
+      font-weight:bold/normal;      文字の太さ
+    }
+    {
+      position:absolute;　　　　画面の左上基準に配置
+      position:relative;      親要素にこれを書くと子要素が親要素の左上基準に配置できる
+    }
+

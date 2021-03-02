@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+  <div id = "app">
+    <!-- <p>{{message}}</p> -->
+    <!-- v-textで二重確固と同じ意味になる -->
+    <!-- <p　v-text="message"></p> -->
+    <!-- v-onceで一度だけ描写 -->
+    <!-- <p　v-once>{{message}}</p> -->
+    <!-- v-htmlはユーザーの入力値表示に使わない。XXS脆弱性を有無 -->
+    <!-- <p　v-html="konitiwa"></p> -->
+    <!-- v-bind aタグのhref属性やimgタグのsrc属性なども動的に変更 -->
+    <!-- v-bind省略可 -->
+    <!-- <a　v-bind:href="url">Google</a> -->
+    <!-- <p>{{number + 3}}</p> -->
+    <!-- <p>{{sayhi()}}</p> -->
+    <!-- <p>{{ok ? "Y" : "N"}}</p> -->
+    <!-- <button v-on:click="reverseMessage">メッセージ反転</button> -->
+    <p>X:{{x}},Y:{{y}}</p>
+    <p v-on:mousemove="changeMousePosition">マウスを置いてください</p>
+  </div>
+
+  <script>
+  new Vue({
+    el: '#app',
+    data:{
+      message:'hello',
+      number: 3,
+      ok: true,
+      konitiwa:"<h1>h1です<h1>",
+      url: 'https://google.com',
+      x: 0,
+      y: 0
+    },
+    methods:{
+    //   reverseMessage:function(){
+    //   this.message= 
+    //   this.message.split('').reverse().join('')
+    // },
+    // sayhi:function(){
+    //   // 自分のインスタンス内のプロパティにアクセスするときはthisが必要
+    //   this.message = "hi Vue"
+    //   return "hi"
+    //  }
+    // }
+    // イベントオブジェクト（イベント情報がたくさん入ったオブジェクト）取得
+    changeMousePosition: function(event){
+      // console.log(event);
+      this.x = event.clientX;
+      this.y = event.clientY;
+    }
+   }
+  })
+  </script>
+</body>
+</html>

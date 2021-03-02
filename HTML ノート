@@ -1,0 +1,85 @@
+コメント
+  <!-- -->　もしくは　commmandと/
+
+レイアウト
+  <!DOCTYPE HTML>
+  <html lang="ja">
+    <head>
+      <meta charset="UTF-8" />
+      <title>初めてのHTML</title>
+      <link rel="stylesheet" href="style1.css" />
+      rel属性：現在のファイルとリンク先ファイルとの関係性を指定する（CSSは、stylesheetと記述）
+      href属性：読み込む外部ファイルを指定する（今回は、CSSファイル名を記述） 
+    </head>
+    <body>
+      <div class="header">              <header></header>でも良い
+        <div class="header-logo">
+
+        </div>
+        <div class="header-list">
+          <ul>
+            <li></li>
+            <li></li>
+
+          </ul>
+
+
+        </div>
+
+      </div>
+      <div class="main">
+       <div class="copy-container">
+
+        </div>
+        <div class="contents">
+
+        </div>
+        <div class="contact-form">
+
+        </div>
+
+      </div>
+      <div class="footer">　　　　　　<footer></footer>でも良い
+        <div class="footer-logo">
+
+
+        </div>
+        <div class="footer-list">
+          <ul>
+              <li></li>
+              <li></li>
+
+            </ul>
+        </div>
+
+      </div>
+
+
+
+    </body>
+  </html>
+
+要素
+  見出し　　　　<h1></h1><h2></h2>   h1の方が大きくなる
+  段落　　<p>プログラミング</p>　　改行される
+  リンク　<a href="http://"></a> href 属性名　　””　属性値
+  画像　　<img src="url">　空要素
+  箇条書きリスト　<li>巨人</li>
+  リストを囲む要素　　
+    <ul>　黒点の箇条書き　　 list-style: none; で黒点消せる
+      <li>巨人</li>
+      <li>ソフトバンク</li>
+      <li>阪神</li>
+    </ul>
+    <ol>
+      <li>ソフトバンク</li>
+      <li>巨人</li>
+      <li>阪神</li>
+    </ol>
+    このように要素を要素で囲むことを入れ子と言う。
+    囲む方の要素を親要素、囲まれる要素を子要素と呼ぶ。
+    入れ子構造の要素がある場合は、インデント（字下げ）をすると親子関係がわかりやすい
+    行の先頭で「tab」キーを押すと簡単にインデントをすることができる。
+   
+    <li class="selected"></li>   すべてのHTMLタグにclass属性をつけられて同じ名前を何回も使うことができる
+    <li id="selected"></li>  一回しか使えないため全体の中で1つしかない要素であることを明示するときにのみ使う
